@@ -1,4 +1,4 @@
-###K8S环境搭建
+### K8S环境搭建
 
 #### 1. 准备环境
 
@@ -98,6 +98,7 @@ EOF
 > 然后再执行：  
 > kubectl apply -f kube-flannel.yml  
 
+> 查看状态:
 > kubectl get pod -n kube-system
 > ![](pics/flannel_success.png)  
 > 上图所示表明安装成功
@@ -136,7 +137,7 @@ EOF
 ![](pics/dashboard_svc.png)   
 > 以及和kubernetes-dashboard相关的两个services
 
-####8. 访问dashboard  
+#### 8. 访问dashboard  
 > 参考官方文章： https://github.com/kubernetes/dashboard/blob/master/docs/user/accessing-dashboard/README.md  
 
 > 当前集群信息如下:  
